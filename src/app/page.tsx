@@ -13,10 +13,13 @@ init({
 export default function Home() {
   return (
     <main>
-      <LeafFocusable />
+      <LeafFocusable>Press me</LeafFocusable>
       <div className='p-8 flex gap-4'>
         <ButtonList isSetFocus />
         <ButtonList />
+      </div>
+      <div className="p-10">
+        <a href="./focus-boundary">focus-boundary</a>
       </div>
     </main>
   )
