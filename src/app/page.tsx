@@ -2,6 +2,7 @@
 
 import { init } from '@noriginmedia/norigin-spatial-navigation';
 
+import { LeafFocusable } from "@/app/_components/_LeafFocusable"
 import { ButtonList } from '@/app/_components/_ButtonList'
 
 init({
@@ -11,11 +12,12 @@ init({
 
 export default function Home() {
   return (
-      <main>
-        <div className='p-8 flex gap-4'>
-          <ButtonList isSetFocus />
-          <ButtonList />
-        </div>
-      </main>
+    <main>
+      <LeafFocusable />
+      <div className='p-8 flex gap-4'>
+        <ButtonList isSetFocus />
+        <ButtonList />
+      </div>
+    </main>
   )
 }

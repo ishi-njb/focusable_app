@@ -19,12 +19,12 @@ export const ButtonList = ({isSetFocus = false}: Props) => {
     }, [focusSelf, isSetFocus])
 
     useEffect(() => {
-        console.log('focusKey:',focusKey)
+        console.log('focusKey:', focusKey)
     }, [focusKey])
 
     useEffect(() => {
-        console.log('hasFocusedChild:',hasFocusedChild)
-    }, [hasFocusedChild])
+        console.log('hasFocusedChild:', focusKey, hasFocusedChild)
+    }, [focusKey, hasFocusedChild])
 
     return (
         <FocusContext.Provider value={focusKey}>
